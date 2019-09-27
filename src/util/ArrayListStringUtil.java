@@ -47,4 +47,14 @@ public class ArrayListStringUtil {
         return sb.toString();
     }
 
+    public static String stringListToString(List<String> stringList) {
+        StringBuilder sb = new StringBuilder("[");
+        for (String item : stringList) {
+            sb.append(item);
+            sb.append(",");
+        }
+
+        sb.setCharAt(sb.length() - 1, ']');
+        return sb.toString();
+    }
 }
