@@ -3,6 +3,7 @@ package array;
 import java.util.Deque;
 import java.util.LinkedList;
 
+// 滑动窗口
 public class SlideWindow {
 
     public int[] slide(int[] arr, int n, int w) {

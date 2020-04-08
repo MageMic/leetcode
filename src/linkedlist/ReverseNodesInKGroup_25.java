@@ -25,7 +25,7 @@ import java.util.Stack;
 //来源：力扣（LeetCode）
 //链接：https://leetcode-cn.com/problems/reverse-nodes-in-k-group
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-public class ReverseNodesInKGroup {
+public class ReverseNodesInKGroup_25 {
 
     // 思路1，用栈
     public ListNode reverseByStack(ListNode head, int k) {
@@ -58,7 +58,7 @@ public class ReverseNodesInKGroup {
     public static void main(String[] args) {
         String str = "[1,2,3,4,5]";
         ListNode head = ListNode.stringToListNode(str);
-        String result = ListNode.listNodeToString(new ReverseNodesInKGroup().reverseByStack(head, 2));
+        String result = ListNode.listNodeToString(new ReverseNodesInKGroup_25().reverseByStack(head, 2));
         System.out.println(result);
     }
 }

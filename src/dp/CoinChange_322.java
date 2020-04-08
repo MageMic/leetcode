@@ -37,8 +37,8 @@ public class CoinChange_322 {
     }
 
     public static void main(String[] args) {
-        int[] coins = new int[] {1,2,5};
-        System.out.println(new CoinChange_322().coinChange(coins, 11));
+        int[] coins = new int[] {1,4,16,64};
+        System.out.println(new CoinChange_322().coinChange(coins, 1024-200));
     }
 
 }

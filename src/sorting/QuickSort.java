@@ -28,7 +28,7 @@ public class QuickSort {
 
     private int partition(int[] A, int start, int end) {
         Random random = new Random();
-        int index = 0;
+        int index = start;
         if (start != end) {
             index = random.nextInt(end - start) + start;
         }
@@ -56,7 +56,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] A = {3, 2, 5, 8, 0};
+        int[] A = {3, 2, 8, 5, 0};
         QuickSort quickSort = new QuickSort();
         quickSort.quickSort(A, A.length);
         for (int a : A) {

@@ -1,35 +1,23 @@
 package interview;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.Arrays;
 
 public class ForTest {
-    public int findPos(int[] arr, int n) {
-        // write code here
-        if (arr[0] > n - 1 || arr[n - 1] < 0) {
-            return -1;
-        }
-
-        int lo = 0, hi = n - 1;
-        int res = -1;
-        while (lo <= hi) {
-            int mid = lo + (hi - lo) / 2;
-            if (arr[mid] == mid) {
-                res = mid;
-                hi = mid - 1;
-            } else {
-                if (arr[mid] < mid) {
-                    lo = mid + 1;
-                } else {
-                    hi = mid - 1;
-                }
-            }
-        }
-        return res;
+    public static void main(String[] args) {
+        test(3);
     }
 
-    public static void main(String[] args) {
-        ForTest test = new ForTest();
-        System.out.println(test.findPos(new int[] {0,2,7}, 3));
+    private static void test(int n) {
+        char[][] a = new char[n][n];
+
+        for (int i = 0; i < n; i++) {
+            a[i][i] = 'a';
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(a[i][j]);
+            }
+            System.out.println();
+        }
     }
 }

@@ -2,6 +2,8 @@ package dp;
 
 import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 // 300.最长上升子序列（动态规划+二分查找）
 // 给定一个无序的整数数组，找到其中最长上升子序列的长度。
@@ -38,6 +40,7 @@ public class LongestIncreasingSubsequence_300 {
             res = Math.max(dp[i], res);
         }
         return res;
+
     }
 
     public int lengthOfLIS_dpAndBs(int[] nums) {
