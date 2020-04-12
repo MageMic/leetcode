@@ -44,6 +44,7 @@ public class FriendCircles_547 {
     }
     private void dfs(int[][] M, boolean[] visited, int i) {
         for (int j = 0; j < M.length; j++) {
+            // 找到朋友之后，再去这个朋友的其他朋友，标识为visited
             if (M[i][j] == 1 && !visited[j]) {
                 visited[j] = true;
                 dfs(M, visited, j);
