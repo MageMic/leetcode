@@ -4,6 +4,7 @@ package array;
  * @Author: zjumic
  * @Date: created at 21:17 2020/2/29
  */
+// 逆序对的个数
 public class InversePairs {
 
     public int InversePairs(int [] array) {

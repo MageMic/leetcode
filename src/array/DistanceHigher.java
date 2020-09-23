@@ -7,6 +7,8 @@ import java.util.Queue;
  * @Author: zjumic
  * @Date: created at 19:03 2020/3/22
  */
+
+// 比他高的人的距离
 public class DistanceHigher {
 
     public int[] DistanceToHigher (int[] height) {
